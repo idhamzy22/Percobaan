@@ -1,0 +1,22 @@
+@startuml
+start
+:Login ke sistem;
+if (Apakah Admin?) then (Ya)
+  :Akses penuh;
+  :Kelola pengguna;
+else (Tidak)
+  :Akses terbatas;
+endif
+if (Kelola Buku?) then (Ya)
+  :Tambah/Edit/Hapus Buku;
+endif
+if (Kelola Peminjaman?) then (Ya)
+  :Tambah/Edit Peminjaman;
+  :Tambah/Edit Pengembalian;
+  :Hitung denda keterlambatan;
+endif
+if (Kelola Pengunjung?) then (Ya)
+  :Tambah/Edit Data Pengunjung;
+endif
+stop
+@enduml

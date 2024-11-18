@@ -1,0 +1,21 @@
+@startuml
+actor "Admin" as Admin
+actor "Staff" as Staff
+
+usecase "Login ke Sistem" as UC1
+usecase "Kelola Pengguna" as UC2
+usecase "Kelola Buku" as UC3
+usecase "Kelola Peminjaman dan Pengembalian" as UC4
+usecase "Kelola Pengunjung" as UC5
+
+Admin --> UC1
+Admin --> UC2
+Admin --> UC3
+Admin --> UC4
+Admin --> UC5
+
+Staff --> UC1
+Staff --> UC3
+Staff --> UC4
+Staff --> UC5
+@enduml
